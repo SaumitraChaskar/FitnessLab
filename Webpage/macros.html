@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style type="text/css">
+    .container{
+      width: 1250px;
+      height:850px;
+      top:90%;
+      left: 50%;
+      position: absolute;
+      transform:translate(-50%,-50%);
+    }
+
+
+ul{
+  list-style-type: none;
+  float: right;
+  margin-top: 25px;
+}
+
+body{
+  background-image: url(bgnew.jpg);
+  image-rendering: pixelated;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color:#fff;
+  padding: 5px 20px;
+  border:1px solid #fff transparent;
+  transition: 0.6s ease;
+
+}
+
+.main ul li a:hover{
+  background-color: #fff;
+  color:#000; 
+}
+
+.logo img{
+  float: left;
+  width:150px;
+  height: 100px;
+}
+
+.main{
+  max-width: 1400px;
+  margin:20px; 
+}
+
+ul li.active a{
+  background-color: #fff;
+  color:#000; 
+}
+  </style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/macros.css">
+
+</head>
+<body>
+
+  <div class="main">
+        <div class="logo">
+          <img src="logonew.png">
+        </div>
+        <ul>
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Programs</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Blog</a></li> 
+        </ul>
+      </div
+
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+        <h2>Calculate Macros</h2>      
+        <div class="row">
+          <div class="col-50">
+            <h3 style="text-decoration: none;">Physique Details</h3>
+            <label for="fname"><i class="fa fa-user"></i> AGE</label>
+            <input type="text" id="fname" name="firstname" placeholder="20">
+            <label for="gender"><i class="fa fa-user"></i> GENDER</label>
+            <input type="radio" name="gender" value="male" checked> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br><br>
+            <label for="adr"><i class="fa fa-address-card-o"></i> HEIGHT</label>
+            <input type="radio" name="height" value="foot" checked> Foot/inch<br>
+            <input type="radio" name="height" value="metres"> m/cm<br><br>
+            <input type="text" id="adr" name="address" placeholder="5/10">
+            <label for="goal">Whats your Goal !</label>
+            <label for="adr"><i class="fa fa-address-card-o"></i> HEIGHT</label>
+            <input type="radio" name="goal" value="low" checked>Fat Loss<br>
+            <input type="radio" name="goal" value="medium">Muscle Gains<br>
+            <input type="radio" name="goal" value="high">Maintenence<br><br>
+            <label for="adr"><i class="fa fa-address-card-o"></i>WEIGHT</label>
+            <input type="text" id="weight" name="weight" placeholder="50"> 
+            <input type="radio" name="weight" value="pounds" checked>Pounds<br>
+            <input type="radio" name="weight" value="kg">Kg<br><br>
+
+            
+
+            <!--<div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>-->
+            </div>
+          </div>
+
+          <!--<div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>-->
+        </label>
+        <input type="submit" value="Get my MACROS" class="btn">
+    </div>
+  </div>
+  <!--<div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">IPHONE</a> <span class="price">$1500</span></p>
+      <p><a href="#">SAMSUNG</a> <span class="price">$500</span></p>
+      <p><a href="#">OPPO</a> <span class="price">$400</span></p>
+      <p><a href="#">HUAWEI</a> <span class="price">$200</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$2600</b></span></p>
+    </div>
+  </div>-->
+</div>
+
+</body>
+</html>
