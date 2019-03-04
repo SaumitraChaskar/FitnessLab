@@ -3,6 +3,7 @@
 <head>
 	<title>Sign Up</title>
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
+	<script type="text/javascript" src="js/signup.js"></script>
 </head>
 <body>
 
@@ -10,26 +11,29 @@
 				<div class="logo">
 					<img src="logonew.png">
 				</div>
-				<ul>
-					<li ><a href="#">Home</a></li>
-					<li><a href="#">Programs</a></li>
-					<li><a href="#">About Us</a></li>
-					<li class="active"><a href="#">Login</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Macros</a></li>	
-				</ul>
+			
+			<ul>
+          		<li><a href="index.html">Home</a></li>
+          		<li><a href="products.html">Products</a></li>
+          		<li><a href="#">About Us</a></li>
+          		<li><a href="login.html">Login</a></li>
+          		<li class="active"><a href="signup.html">Signup</a></li>
+          		<li><a href="macros.html">Macros</a></li> 
+        	</ul>
 			</div>
 	<div class="loginbox">
 	<img src="user1.jpg" class ="avatar">
 		<h1>SignUp Here</h1>
-		<form>
+		<form name="signup" onsubmit="return validateForm()">
+			<p id="email-alert" style="visibility:hidden;color: red;font-size: 12px">*Email error</p>
 			<p class="blobs">Email</p>
-			<input type="text" name="" placeholder="abc@gmail.com">
+			<input type="text" name="email" placeholder="abc@gmail.com">
+			<p id="user-alert" style="visibility:hidden;color: red;font-size: 12px">*Username error</p>
 			<p class="blobs">Username</p>
-			<input type="text" name="" placeholder="Username">
+			<input type="text" name="uname" placeholder="Username">
+			<p id="pass-alert" style="visibility:hidden;color: red;font-size: 12px">*Password error</p>
 			<p class="blobs">Password</p>
-			<input type="Password" name="" placeholder="Password">
+			<input type="Password" name="password" placeholder="Password">
 			<input type="submit" name="" value="Sign Up!">
 			<a href="#">Already Have a account !</a><br>
 		</form>

@@ -3,6 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	border: 0;
 	font-family: Century Gothic;
 }
 
@@ -19,6 +20,7 @@ body{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	color: white;
+	border-color: none;
 }
 
 .login-box h1{
@@ -50,8 +52,8 @@ body{
 	border:none;
 	outline: none;
 	background:none;
-	color:white;
 	font-size: 18px;
+	color: white;
 	width: 80%;
 	float: left;
 	margin: 0px 10px;

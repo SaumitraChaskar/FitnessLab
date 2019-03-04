@@ -9,6 +9,9 @@
   border: none;
 }
 </style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/loginform.js"></script>
 	<title>Login Form</title>
 	<link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
@@ -16,28 +19,33 @@
 	<div class="logo">
 		<img src="logonew.png">
 				</div>
+			<div class="main">
 				<ul>
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Programs</a></li>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Login</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="#">Products</a></li>	
+          		<li><a href="index.html">Home</a></li>
+          		<li ><a href="products.html">Products</a></li>
+          		<li><a href="#">About Us</a></li>
+          		<li class="active"><a href="login.html">Login</a></li>
+          		<li><a href="signup.html">Signup</a></li>
+          		<li><a href="macros.html">Macros</a></li> 
 				</ul>
 			</div>
 	<div class="login-box">
-			<h1>Login</h1>
+		<form name="loginForm" onsubmit="return validateForm()">
+			<h1 id="change">Login</h1>
 			<div class="textbox">
+				<p id="user-alert" style="visibility:hidden;color: red;font-size: 12px">*Username required</p>
 				<i class="fas fa-user" aria-hidden="true"></i>
-					<input type="text" placeholder="Username" name="" value="">
+					<input type="text" placeholder="Username" name="name" value="">
 
 			</div>
 			<div class="textbox">
+				<p id="pass-alert" style="visibility:hidden;color: red;font-size: 12px">*Password require</p>
 				<i class="fas fa-user" aria-hidden="true"></i>
-					<input type="password" placeholder="Password" name="" value="">
+					<input type="password" placeholder="Password" name="password" value="">
 			</div>
-				<input type="button" name="" value="Sign In" class="btn">
-
+				<input type="submit" name="" value="Sign In" class="btn">
+		</form>
 	</div>
+
 </body>
 </html>
